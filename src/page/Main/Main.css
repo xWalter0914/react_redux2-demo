@@ -2,3 +2,11 @@
 *{
     list-style: none;
 }
+
+img{
+    position:absolute;
+    margin-left: 4px;
+    margin-top: 4px;
+    width:15px;
+    height:15px;
+}

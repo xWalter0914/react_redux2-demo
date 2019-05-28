@@ -1,6 +1,6 @@
 import './Alter.css';
 import React, { Component } from 'react'
-import {afterHandler} from '../../action/anction'
+import {alterAction} from '../../action/alterAction'
 import {connect} from 'react-redux'
 class Alter extends Component{
     constructor(props) {
@@ -60,11 +60,11 @@ class Alter extends Component{
 }
 
 const mapStateToProps = state =>({
-    pwd:state.state.oldPwd,
-    username:state.state.username
+    pwd:state.user.oldPwd,
+    username:state.user.username
 });
 
 
 // export default connect(mapStateToProps, afterHandler)(Alter);
 
-export default connect(mapStateToProps, afterHandler)(Alter);
+export default connect(mapStateToProps, alterAction)(Alter);
